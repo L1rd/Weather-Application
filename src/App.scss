@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+* {
+	font-family: "Open Sans";
+	font-style: normal;
+	font-weight: 400;
+	color: #080338;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+tr {
+	padding-bottom: 20px;
+}
+td {
+	&:first-child {
+		padding-right: 50px;
+	}
+}
+
+.app {
+	max-width: 1340px;
+	height: 100%;
+	margin: 0 auto;
+	padding: 0;
+	&__title {
+		font-size: 24px;
+		line-height: 33px;
+	}
+	&__input {
+		width: 360px;
+		height: 50px;
+		transition: 0.5s;
+		padding-left: 50px;
+		border: none;
+		background: url("img/icons/vector.svg") no-repeat 15px 13px,
+			linear-gradient(
+				162.91deg,
+				rgba(0, 0, 0, 0.03) -1.68%,
+				rgba(255, 255, 255, 0.093125) 127.54%,
+				rgba(255, 255, 255, 0.112968) 127.56%,
+				rgba(255, 255, 255, 0.111191) 127.57%,
+				rgba(255, 255, 255, 0.15) 127.58%
+			);
+		border-radius: 30px;
+		&::placeholder {
+			font-size: 18px;
+			line-height: 25px;
+			opacity: 0.7;
+		}
+		&:focus {
+			transform: scale(1.1);
+			outline: none;
+		}
+	}
+	&__main {
+		height: 100%;
+		padding: 25px 20px;
+		background: linear-gradient(
+			162.91deg,
+			rgba(0, 0, 0, 0.03) -1.68%,
+			rgba(255, 255, 255, 0.093125) 127.54%,
+			rgba(255, 255, 255, 0.112968) 127.56%,
+			rgba(255, 255, 255, 0.111191) 127.57%,
+			rgba(255, 255, 255, 0.15) 127.58%
+		);
+		border-radius: 30px;
+	}
+	&__block {
+		width: 393px;
+		height: 276px;
+		background: linear-gradient(
+			162.91deg,
+			rgba(0, 0, 0, 0.03) -1.68%,
+			rgba(255, 255, 255, 0.093125) 127.54%,
+			rgba(255, 255, 255, 0.112968) 127.56%,
+			rgba(255, 255, 255, 0.111191) 127.57%,
+			rgba(255, 255, 255, 0.15) 127.58%
+		);
+		border-radius: 30px;
+	}
+	&__main-icon {
+		width: 280.79px;
+	}
+	&__weather-icon {
+		object-fit: cover;
+		height: 70%;
+		width: 70%;
+	}
+	&__weather-day {
+		align-self: end;
+		border-right: 1px solid #aaaaaa;
+		padding-right: 40px;
+		height: 100%;
+		&:last-child {
+			border-right: none;
+			padding-right: 0;
+		}
+	}
+	&__date {
+		font-size: 24px;
+		line-height: 33px;
+	}
+	&__degree {
+		font-family: "Inter", sans-serif;
+		font-size: 70px;
+		line-height: 85px;
+	}
+	&__time-period {
+		font-size: 24px;
+		line-height: 33px;
+		margin-bottom: 5px;
+	}
+	&__time {
+		& td {
+			font-size: 20px;
+			line-height: 27px;
+		}
+	}
+	&__number {
+		& td {
+			font-weight: 600;
+			font-size: 18px;
+			line-height: 25px;
+		}
+	}
+	&__params {
+		align-self: end;
+		width: 120px;
+		text-align: right;
+		td:first-child {
+			padding-right: none;
+		}
+	}
+	&__characteristic {
+		bottom: 0;
+	}
+	&__param {
+		td {
+			font-size: 18px;
+			line-height: 25px;
+			color: #c0c0c0;
+			padding-right: 0;
+		}
+	}
+}
