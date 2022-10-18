@@ -1,0 +1,1 @@
+export const TEMPERATURE_INDEXES_TEMPLATE = [2, 5, 8, 11, 14, 17, 20, 23]
