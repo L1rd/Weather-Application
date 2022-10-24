@@ -1,0 +1,113 @@
+.wrapper.dark {
+	.app__main {
+		border: 1px solid #ffffff33;
+		background: linear-gradient(
+			162.91deg,
+			rgba(255, 255, 255, 0.03) -1.68%,
+			rgba(255, 255, 255, 0.093125) 127.54%,
+			rgba(255, 255, 255, 0.112968) 127.56%,
+			rgba(255, 255, 255, 0.111191) 127.57%,
+			rgba(255, 255, 255, 0.15) 127.58%
+		);
+	}
+}
+
+.app {
+	&__main {
+		border: 1px solid lightgray;
+		height: 100%;
+		padding: 25px 20px;
+		background: linear-gradient(
+			162.91deg,
+			rgba(0, 0, 0, 0.03) -1.68%,
+			rgba(255, 255, 255, 0.093125) 127.54%,
+			rgba(255, 255, 255, 0.112968) 127.56%,
+			rgba(255, 255, 255, 0.111191) 127.57%,
+			rgba(255, 255, 255, 0.15) 127.58%
+		);
+		border-radius: 30px;
+		&-icon {
+			width: 280.79px;
+		}
+	}
+
+	&__weather-icon {
+		object-fit: cover;
+		height: 70%;
+		width: 70%;
+	}
+
+	&__degree {
+		font-family: "Inter", sans-serif;
+		font-size: 70px;
+		line-height: 85px;
+	}
+
+	&__characteristic {
+		bottom: 0;
+	}
+
+	&__date {
+		font-size: 24px;
+		line-height: 33px;
+	}
+
+	&__number {
+		font-weight: 600;
+		font-size: 18px;
+		line-height: 25px;
+	}
+
+	&__param {
+		font-size: 18px;
+		line-height: 25px;
+		color: #c0c0c0;
+		padding-right: 0;
+	}
+
+	&__time-period {
+		font-size: 24px;
+		line-height: 33px;
+		margin-bottom: 5px;
+	}
+
+	&__time {
+		font-size: 20px;
+		line-height: 27px;
+	}
+}
+
+tr {
+	& td:first-child {
+		padding-right: 30px;
+		text-align: right;
+		border: none;
+	}
+	&:last-child {
+		& td {
+			padding-bottom: none;
+		}
+	}
+}
+
+td {
+	border-right: 1px solid #aaaaaa;
+	padding-bottom: 15px;
+	&:nth-child(even) {
+		padding-right: 30px;
+	}
+	&:nth-child(odd) {
+		padding-right: 40px;
+	}
+	&:last-child {
+		padding-right: 0;
+		border: none;
+	}
+}
+
+tbody td {
+	&:nth-child(even) {
+		padding-right: 50px;
+		border: none;
+	}
+}

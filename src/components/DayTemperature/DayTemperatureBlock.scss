@@ -1,0 +1,58 @@
+.wrapper.dark {
+	.app__day-block {
+		border: 1px solid #ffffff33;
+		background: linear-gradient(
+			162.91deg,
+			rgba(255, 255, 255, 0.03) -1.68%,
+			rgba(255, 255, 255, 0.093125) 127.54%,
+			rgba(255, 255, 255, 0.112968) 127.56%,
+			rgba(255, 255, 255, 0.111191) 127.57%,
+			rgba(255, 255, 255, 0.15) 127.58%
+		);
+	}
+}
+
+.app {
+	&__header {
+		& h2 {
+			font-weight: 600;
+			font-size: 20px;
+			line-height: 27px;
+		}
+		& p {
+			font-size: 16px;
+			line-height: 22px;
+		}
+	}
+
+	&__text {
+		& h2,
+		& p {
+			font-family: "Inter", sans-serif;
+			font-weight: 500;
+			font-size: 24px;
+			line-height: 29px;
+		}
+		& p {
+			color: #686868;
+		}
+	}
+
+	&__day-block {
+		width: 182px;
+		height: 165px;
+		border: 1px solid lightgray;
+		background: linear-gradient(
+			162.91deg,
+			rgba(0, 0, 0, 0.03) -1.68%,
+			rgba(255, 255, 255, 0.093125) 127.54%,
+			rgba(255, 255, 255, 0.112968) 127.56%,
+			rgba(255, 255, 255, 0.111191) 127.57%,
+			rgba(255, 255, 255, 0.15) 127.58%
+		);
+		border-radius: 30px;
+		&:last-of-type {
+			margin-right: 0;
+		}
+	}
+}

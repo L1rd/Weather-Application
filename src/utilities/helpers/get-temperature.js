@@ -1,0 +1,1 @@
+export const getTemperature = (temperature) => temperature > 0 ? "+" + Math.floor(temperature) + "°" : Math.floor(temperature) + "°";
