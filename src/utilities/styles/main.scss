@@ -40,9 +40,6 @@ tr {
 		}
 
 		#svg3 {
-			& #svg3-title {
-				fill: white;
-			}
 			& path {
 				stroke: white;
 			}
@@ -59,7 +56,12 @@ tr {
 	height: 100%;
 	margin: 0 auto;
 	padding: 0;
-
+   &__sublabel{
+		& h2{
+			font-size: 12px;
+		}
+	}
+	
 	&__block {
 		width: 393px;
 		height: 276px;

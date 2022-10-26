@@ -10,12 +10,10 @@ export const SearchToolbar = ({ city, country, setData, theme, setTheme }) => {
 			}))
 		}
 	}
-	
-	const switchTheme = () =>
-		setTheme(prevState => ({
-			...prevState,
-			theme: theme === THEMES.dark ? THEMES.light : THEMES.dark,
-		}))
+
+	const switchTheme = () => setTheme(
+		theme === THEMES.dark ? THEMES.light : THEMES.dark,
+	)
 
 	return (
 		<div className="app__header d-flex flex-wrap justify-between align-center pt-30 pb-30">
