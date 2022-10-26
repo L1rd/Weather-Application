@@ -1,0 +1,79 @@
+* {
+	font-family: "Open Sans", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	color: #080338;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+tr {
+	padding-bottom: 20px;
+}
+
+.wrapper {
+	transition: 0.5s;
+	&.dark {
+		background: #080338;
+		* {
+			color: #ffff;
+		}
+
+		#svg1 {
+			& #el2 {
+				stroke: white;
+			}
+			& path:not(#el1, #el2) {
+				fill: white;
+				stroke: white;
+			}
+		}
+
+		#svg2 {
+			& rect {
+				fill: inherit;
+			}
+			& path {
+				stroke: white;
+			}
+		}
+
+		#svg3 {
+			& path {
+				stroke: white;
+			}
+		}
+
+		.app__block{
+			border: 1px solid #ffffff33;
+		}
+	}
+}
+
+.app {
+	max-width: 1340px;
+	height: 100%;
+	margin: 0 auto;
+	padding: 0;
+   &__sublabel{
+		& h2{
+			font-size: 12px;
+		}
+	}
+	
+	&__block {
+		width: 393px;
+		height: 276px;
+		border: 1px solid lightgray;
+		background: linear-gradient(
+			162.91deg,
+			rgba(0, 0, 0, 0.03) -1.68%,
+			rgba(255, 255, 255, 0.093125) 127.54%,
+			rgba(255, 255, 255, 0.112968) 127.56%,
+			rgba(255, 255, 255, 0.111191) 127.57%,
+			rgba(255, 255, 255, 0.15) 127.58%
+		);
+		border-radius: 30px;
+	}
+}
